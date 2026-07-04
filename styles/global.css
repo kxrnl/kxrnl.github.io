@@ -28,9 +28,8 @@ body {
     margin: 0;
     padding: 20px;
 
-    color: var(--text-color);
     font-family: 'Akira', monospace;
-    background-color: var(--bg-color);
+    background-color: white;
     gap: 50px;
     display: grid;
     place-items: center;
