@@ -1,0 +1,91 @@
+section {
+    border: 2px solid #303030;
+    padding: 18px;
+}
+
+#left_side {
+    max-width: 320px;
+    width: 100%;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#pfp_holder {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#pfp {
+    width: 150px;
+    max-width: 100%;
+    border: 2px solid black;
+
+    cursor: pointer;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+}
+
+.school_label {
+    text-align: left;
+    color: #303030;
+}
+
+.in_container {
+    padding: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+a::after {
+    padding-left: 8px;
+    content: "//";
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 12px;
+    }
+
+    #left_side {
+        max-width: 100%;
+    }
+
+    #pfp_holder {
+        justify-content: center;
+    }
+
+    #pfp {
+        width: 110px;
+    }
+
+    #info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .school_label {
+        text-align: center;
+    }
+
+    .in_container {
+        padding: 12px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    #pfp {
+        width: 90px;
+    }
+}

@@ -1,0 +1,28 @@
+input {
+    border: 0;
+    outline: none;
+    font-family: 'Akira', monospace;
+}
+
+input[type="button"] {
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+input[type="button"]:hover {
+    transform: rotate(5deg);
+}
+
+.nofill {
+    border: 2px solid black;
+}
+
+.normal {
+    background-color: grey;
+}
+
+.submit {
+    border: 2px solid green;
+}
